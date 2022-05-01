@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mad0g4.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="scala">
+<meta property="og:type" content="article">
+<meta property="og:title" content="scala">
+<meta property="og:url" content="https://mad0g4.github.io/1970/01/01/scala/index.html">
+<meta property="og:site_name" content="Blog of Mad0g4">
+<meta property="og:description" content="scala">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-01T11:36:19.008Z">
+<meta property="article:author" content="mad0g4">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://mad0g4.github.io/1970/01/01/scala/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>scala | Blog of Mad0g4</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Blog of Mad0g4" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Blog of Mad0g4</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">None</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://mad0g4.github.io/1970/01/01/scala/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mad0g4">
+      <meta itemprop="description" content="Blog of Mad0g4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Mad0g4">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          scala
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-01 19:36:19" itemprop="dateModified" datetime="2022-05-01T19:36:19+08:00">2022-05-01</time>
+              </span>
+
+          
+            <div class="post-description">scala</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="fastjson"><a target="_blank" rel="noopener" href="https://github.com/alibaba/fastjson">Fastjson</a></h2>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.&#123;<span class="type">JSON</span>, <span class="type">JSONArray</span>, <span class="type">JSONObject</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.&#123;<span class="type">FileReader</span>, <span class="type">FileWriter</span>&#125;</span><br><span class="line"><span class="keyword">import</span> scala.collection.<span class="type">JavaConversions</span>._</span><br><span class="line"><span class="keyword">import</span> scala.io.<span class="type">Source</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">hello</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">val</span> str=<span class="string">&quot;&#123;&#x27;status&#x27;: &#x27;1&#x27;, &#x27;info&#x27;: &#x27;OK&#x27;, &#x27;infocode&#x27;: &#x27;10000&#x27;, &#x27;pois&#x27;: [&#123;&#x27;name&#x27;: &#x27;砖集李记早点肠粉&#x27;, &#x27;id&#x27;: &#x27;B0G1PRLKO7&#x27;, &#x27;location&#x27;: &#x27;115.310382,33.107070&#x27;, &#x27;type&#x27;: &#x27;餐饮服务;中餐厅;广东菜(粤菜)&#x27;, &#x27;typecode&#x27;: &#x27;050103&#x27;, &#x27;pname&#x27;: &#x27;安徽省&#x27;, &#x27;cityname&#x27;: &#x27;阜阳市&#x27;, &#x27;adname&#x27;: &#x27;界首市&#x27;, &#x27;address&#x27;: &#x27;砖集镇&#x27;, &#x27;pcode&#x27;: &#x27;340000&#x27;, &#x27;citycode&#x27;: &#x27;1558&#x27;, &#x27;adcode&#x27;: &#x27;341282&#x27;, &#x27;business&#x27;: &#123;&#x27;tel&#x27;: &#x27;18805687671&#x27;, &#x27;rectag&#x27;: &#x27;粤菜&#x27;, &#x27;keytag&#x27;: &#x27;粤菜&#x27;, &#x27;rating&#x27;: &#x27;4.0&#x27;, &#x27;opentime_today&#x27;: &#x27;24小时营业&#x27;, &#x27;opentime_week&#x27;: &#x27;00:00-24:00&#x27;&#125;, &#x27;indoor&#x27;: &#123;&#x27;indoor_map&#x27;: &#x27;0&#x27;&#125;, &#x27;photos&#x27;: [&#123;&#x27;title&#x27;: &#x27;&#x27;, &#x27;url&#x27;: &#x27;http://store.is.autonavi.com/showpic/1871eb6ec7c0c24df0125bbfd5526df0&#x27;&#125;]&#125;], &#x27;count&#x27;: &#x27;1&#x27;&#125;&quot;</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">val</span> str1=<span class="string">&quot;&#123;\&quot;a\&quot;:1,\&quot;b\&quot;:2,\&quot;c\&quot;:3&#125;&quot;</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">var</span> writer:<span class="type">FileWriter</span>=<span class="literal">null</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">var</span> reader: <span class="type">FileReader</span> = <span class="literal">null</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">val</span> txt_file_path=<span class="string">&quot;C:\\Users\\mad0g4\\Desktop\\art.txt&quot;</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">val</span> kind_arr=<span class="type">Set</span>(<span class="string">&quot;JSONArray&quot;</span>,<span class="string">&quot;JSONObject&quot;</span>)</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">main</span></span>(args: <span class="type">Array</span>[<span class="type">String</span>]): <span class="type">Unit</span> = &#123;</span><br><span class="line">		<span class="keyword">if</span>(<span class="literal">false</span>)&#123;</span><br><span class="line">			<span class="keyword">val</span> x:<span class="type">JSONObject</span>=<span class="type">JSON</span>.parseObject(str)</span><br><span class="line">			println(get_class_name(x))</span><br><span class="line">			<span class="keyword">val</span> res=x.getString(<span class="string">&quot;status&quot;</span>)</span><br><span class="line">			println(res)</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(<span class="literal">false</span>)&#123;</span><br><span class="line">			<span class="keyword">val</span> x:<span class="type">JSONObject</span>=<span class="type">JSON</span>.parseObject(str)</span><br><span class="line">			<span class="keyword">val</span> arr:<span class="type">JSONArray</span>=x.getJSONArray(<span class="string">&quot;pois&quot;</span>)</span><br><span class="line">			println(get_class_name(arr))</span><br><span class="line">			<span class="keyword">val</span> lis: <span class="type">Seq</span>[<span class="type">AnyRef</span>] =arr.iterator().toList</span><br><span class="line">			lis.foreach(println)</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(<span class="literal">false</span>)&#123;</span><br><span class="line">			println(<span class="string">&quot;----------------------------&quot;</span>)</span><br><span class="line">			dfs(str1)</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">			<span class="keyword">val</span> source=<span class="type">Source</span>.fromFile(txt_file_path)</span><br><span class="line">			<span class="keyword">val</span> str2: <span class="type">Array</span>[<span class="type">String</span>] =source.getLines().toArray</span><br><span class="line">			str2.foreach(x=&gt;&#123;</span><br><span class="line">				<span class="keyword">val</span> tmp=<span class="type">JSON</span>.parseObject(x)</span><br><span class="line"><span class="comment">//				println(&quot;tmp=&quot;+tmp)</span></span><br><span class="line">				dfs(x)</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">get_class_name</span></span>[<span class="type">T</span>](x:<span class="type">T</span>): <span class="type">String</span> =&#123;</span><br><span class="line">		<span class="keyword">val</span> tmp: <span class="type">Array</span>[<span class="type">String</span>] =x.getClass().getName().split(&#x27;.&#x27;)</span><br><span class="line">		tmp(tmp.length<span class="number">-1</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">dfs</span></span>[<span class="type">T</span>](x:<span class="type">T</span>): <span class="type">Boolean</span> =&#123;</span><br><span class="line">		<span class="keyword">var</span> b:<span class="type">AnyRef</span>=<span class="literal">null</span></span><br><span class="line">		<span class="keyword">if</span>(x.isInstanceOf[<span class="type">String</span>])&#123;</span><br><span class="line">			<span class="keyword">val</span> str:<span class="type">String</span>=x.asInstanceOf[<span class="type">String</span>]</span><br><span class="line">			<span class="keyword">val</span> flag:<span class="type">Boolean</span>=<span class="keyword">try</span>&#123;</span><br><span class="line">				b=<span class="type">JSON</span>.parse(str)</span><br><span class="line">				<span class="literal">true</span></span><br><span class="line">			&#125;<span class="keyword">catch</span> &#123;</span><br><span class="line">				<span class="keyword">case</span> e:<span class="type">Exception</span>=&gt;&#123;</span><br><span class="line">					<span class="literal">false</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(flag==<span class="literal">false</span>)</span><br><span class="line">				<span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(x.isInstanceOf[<span class="type">JSONArray</span>])</span><br><span class="line">			b=x.asInstanceOf[<span class="type">JSONArray</span>]</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(x.isInstanceOf[<span class="type">JSONObject</span>])</span><br><span class="line">			b=x.asInstanceOf[<span class="type">JSONObject</span>]</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">//		println(&quot;b.instance:&quot;+get_class_name(b))</span></span><br><span class="line">		<span class="keyword">if</span>(b.isInstanceOf[<span class="type">JSONArray</span>])&#123;</span><br><span class="line">			<span class="keyword">val</span> tmp:<span class="type">JSONArray</span>=x.asInstanceOf[<span class="type">JSONArray</span>]</span><br><span class="line">			<span class="keyword">for</span>(i&lt;-tmp) &#123;</span><br><span class="line"><span class="comment">//				println(&quot;array_elem=&quot;+i)</span></span><br><span class="line">				<span class="keyword">if</span>(kind_arr.contains(get_class_name(i)))</span><br><span class="line">					dfs(i)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">val</span> tmp:<span class="type">JSONObject</span>=b.asInstanceOf[<span class="type">JSONObject</span>]</span><br><span class="line">			<span class="keyword">for</span>(i&lt;-tmp.entrySet)&#123;</span><br><span class="line">				<span class="keyword">if</span>(kind_arr.contains(get_class_name(i.getValue)))</span><br><span class="line">					dfs(i.getValue)</span><br><span class="line">				<span class="keyword">else</span></span><br><span class="line">					println(i.getKey+<span class="string">&quot;:&quot;</span>+i.getValue)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="获取变量类型泛型">获取变量类型&amp;泛型</h2>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_class_name</span></span>[<span class="type">T</span>](x:<span class="type">T</span>): <span class="type">String</span> =&#123;</span><br><span class="line">	<span class="keyword">val</span> tmp: <span class="type">Array</span>[<span class="type">String</span>] =x.getClass().getName().split(&#x27;.&#x27;)</span><br><span class="line">	tmp(tmp.length<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="读取文件source">读取文件Source</h2>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scala.io.<span class="type">Source</span></span><br><span class="line"><span class="keyword">val</span> source = <span class="type">Source</span>.fromFile(filePath, <span class="string">&quot;UTF-8&quot;</span>)</span><br><span class="line"><span class="keyword">val</span> lines = source.getLines().toArray</span><br><span class="line">source.close()</span><br></pre></td></tr></table></figure>
+<h2 id="字符串包含子字符串">字符串包含子字符串</h2>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.contains(<span class="string">&quot;das&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/1970/01/01/sbt/" rel="prev" title="sbt">
+      <i class="fa fa-chevron-left"></i> sbt
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/1970/01/01/banzi/" rel="next" title="banzi">
+      banzi <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#fastjson"><span class="nav-number">1.</span> <span class="nav-text">Fastjson</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E6%B3%9B%E5%9E%8B"><span class="nav-number">2.</span> <span class="nav-text">获取变量类型&amp;泛型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6source"><span class="nav-number">3.</span> <span class="nav-text">读取文件Source</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%85%E5%90%AB%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">4.</span> <span class="nav-text">字符串包含子字符串</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">mad0g4</p>
+  <div class="site-description" itemprop="description">Blog of Mad0g4</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mad0g4</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

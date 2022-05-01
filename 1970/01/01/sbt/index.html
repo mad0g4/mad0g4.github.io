@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mad0g4.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="sbt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sbt">
+<meta property="og:url" content="https://mad0g4.github.io/1970/01/01/sbt/index.html">
+<meta property="og:site_name" content="Blog of Mad0g4">
+<meta property="og:description" content="sbt">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-01T11:36:19.003Z">
+<meta property="article:author" content="mad0g4">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://mad0g4.github.io/1970/01/01/sbt/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>sbt | Blog of Mad0g4</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Blog of Mad0g4" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Blog of Mad0g4</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">None</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://mad0g4.github.io/1970/01/01/sbt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mad0g4">
+      <meta itemprop="description" content="Blog of Mad0g4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Mad0g4">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          sbt
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-01 19:36:19" itemprop="dateModified" datetime="2022-05-01T19:36:19+08:00">2022-05-01</time>
+              </span>
+
+          
+            <div class="post-description">sbt</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="官网"><a target="_blank" rel="noopener" href="https://www.scala-sbt.org/index.html">官网</a></h2>
+<h2 id="导入外部jar包">导入外部jar包</h2>
+<h3 id="tips1"><a target="_blank" rel="noopener" href="https://www.scala-sbt.org/1.x/docs/zh-cn/Library-Dependencies.html">Tips1</a></h3>
+<p>非托管依赖像这样工作：将 jar 文件放在 <code>lib</code>
+文件夹下，然后它们将会被添加到项目的 classpath
+中。没有更多的事情了！</p>
+<p>如果用非托管依赖的话，不用往 <code>build.sbt</code>
+文件中添加任何内容，不过你可以改变 <code>unmanagedBase</code>
+key，如果你想用一个不同的目录而非 <code>lib</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">to build.sbt:</span><br><span class="line"></span><br><span class="line">unmanagedBase := baseDirectory.value / &quot;custom_lib&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="tips2"><a href>Tips2</a></h3>
+<h2 id="项目结构">项目结构</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">HelloWorld  (base directory)</span><br><span class="line">    build.sbt</span><br><span class="line">    .gitignore  (用于忽略文件或目录)</span><br><span class="line"></span><br><span class="line">    project/</span><br><span class="line">        xx.scala (defines helper objects and one-off plugins，辅助对象和一次性插件)</span><br><span class="line">        xx.sbt (并不等价于基本目录下的sbt文件)</span><br><span class="line"></span><br><span class="line">    src/</span><br><span class="line">        main/</span><br><span class="line">            resources/ (files to include in main jar here)</span><br><span class="line">            scala/ (main scala sources)</span><br><span class="line">            java/ (main java sources)</span><br><span class="line">        test/</span><br><span class="line">            resources/ (files to include in test jar here)</span><br><span class="line">            scala/ (test scala sources)</span><br><span class="line">            java/ (test java sources)</span><br><span class="line"></span><br><span class="line">    target/ (generated files, like compiled classes, packaged jars, managed files, caches, and documentation)</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">    .</span><br><span class="line">    |-- build.sbt</span><br><span class="line">    |-- lib</span><br><span class="line">    |-- project</span><br><span class="line">    |-- src</span><br><span class="line">    |   |-- main</span><br><span class="line">    |   |   |-- java</span><br><span class="line">    |   |   |-- resources</span><br><span class="line">    |   |   |-- scala</span><br><span class="line">    |   |-- test</span><br><span class="line">    |       |-- java</span><br><span class="line">    |       |-- resources</span><br><span class="line">    |       |-- scala</span><br><span class="line">    |-- target</span><br><span class="line"></span><br><span class="line">https://stackoverflow.com/questions/28638368/where-does-the-lib-directory-for-unmanaged-jars-in-sbt-directory-structure-go/33378595</span><br></pre></td></tr></table></figure>
+<h2 id="sbt-package-and-assembly">sbt package and assembly</h2>
+<h3 id="sbt-assembly"><a target="_blank" rel="noopener" href="https://github.com/sbt/sbt-assembly/releases">sbt-assembly</a></h3>
+<h3 id="building-a-thin-jar-file"><a target="_blank" rel="noopener" href="https://mungingdata.com/apache-spark/building-jar-sbt/">Building a
+Thin JAR File</a></h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbt package</span><br></pre></td></tr></table></figure>
+<p>You can build a <code>thin</code> JAR file with the
+<code>sbt package</code> command. Thin JAR files only include the
+project’s classes / objects / traits and don’t include any of the
+project dependencies.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/build.sbt :</span><br><span class="line"></span><br><span class="line">name := &quot;bigDataProject&quot;</span><br><span class="line">version := &quot;1.0&quot;</span><br><span class="line">scalaVersion := &quot;2.11.8&quot;</span><br><span class="line"></span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-core&quot; % &quot;2.3.0&quot;</span><br><span class="line">libraryDependencies += &quot;com.alibaba&quot; % &quot;fastjson&quot; % &quot;1.2.76&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="building-a-fat-jar-file"><a target="_blank" rel="noopener" href="https://mungingdata.com/apache-spark/building-jar-sbt/">Building a
+Fat JAR File</a></h3>
+<h4 id="myown">myown</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sbt assembly</span><br></pre></td></tr></table></figure>
+<p>You can build <code>fat</code> JAR files by adding <a target="_blank" rel="noopener" href="https://github.com/sbt/sbt-assembly">sbt-assembly</a> to your
+project. Fat JAR files inlude all the code from your project and all the
+code from the dependencies.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">/build.sbt :</span><br><span class="line"></span><br><span class="line">name := &quot;bigDataProject&quot;</span><br><span class="line">version := &quot;1.0&quot;</span><br><span class="line">scalaVersion := &quot;2.11.8&quot;</span><br><span class="line"></span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-core&quot; % &quot;2.3.0&quot;</span><br><span class="line">libraryDependencies += &quot;com.alibaba&quot; % &quot;fastjson&quot; % &quot;1.2.76&quot;</span><br><span class="line"></span><br><span class="line">assemblyMergeStrategy in assembly := &#123;</span><br><span class="line">  case PathList(&quot;org&quot;,&quot;aopalliance&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;inject&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;servlet&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;activation&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;org&quot;, &quot;apache&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;google&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;esotericsoftware&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;codahale&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;yammer&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;about.html&quot; =&gt; MergeStrategy.rename</span><br><span class="line">  case &quot;META-INF/ECLIPSEF.RSA&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;META-INF/mailcap&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;META-INF/mimetypes.default&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;plugin.properties&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;log4j.properties&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case x =&gt;</span><br><span class="line">    val oldStrategy = (assemblyMergeStrategy in assembly).value</span><br><span class="line">    oldStrategy(x)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/project/assembly.sbt :</span><br><span class="line"></span><br><span class="line">addSbtPlugin(&quot;com.eed3si9n&quot; % &quot;sbt-assembly&quot; % &quot;0.15.0&quot;)</span><br></pre></td></tr></table></figure>
+<h4 id="other-people"><a target="_blank" rel="noopener" href="https://queirozf.com/entries/creating-scala-fat-jars-for-spark-on-sbt-with-sbt-assembly-plugin#spark-2-x">other
+people</a></h4>
+<h5 id="add-sbt-assembly-plugin-to-sbt">Add sbt-assembly plugin to
+sbt</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">├── src/</span><br><span class="line">└── project/</span><br><span class="line">    └── assembly.sbt</span><br></pre></td></tr></table></figure>
+<p>assembly.sbt:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addSbtPlugin(&quot;com.eed3si9n&quot; % &quot;sbt-assembly&quot; % &quot;0.14.2&quot;)</span><br></pre></td></tr></table></figure>
+<h5 id="spark-1.x">Spark 1.x</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">build.sbt:</span><br><span class="line"></span><br><span class="line">// this file was written for spark 1.6.0 and scala 2.10.4</span><br><span class="line">// it will not work on spark 2!</span><br><span class="line"></span><br><span class="line">version := &quot;1.0&quot;</span><br><span class="line"></span><br><span class="line">name := &quot;my-sample-spark-streaming-project&quot;</span><br><span class="line"></span><br><span class="line">scalaVersion := &quot;2.10.4&quot;</span><br><span class="line"></span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-core&quot; % &quot;1.6.0&quot; % &quot;provided&quot;</span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-streaming&quot; % &quot;1.6.0&quot; % &quot;provided&quot;</span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-streaming-kinesis-asl&quot; % &quot;1.6.0&quot;</span><br><span class="line">libraryDependencies += &quot;com.amazonaws&quot; % &quot;amazon-kinesis-client&quot; % &quot;1.6.1&quot;</span><br><span class="line">libraryDependencies += &quot;com.amazonaws&quot; % &quot;amazon-kinesis-producer&quot; % &quot;0.10.2&quot;</span><br><span class="line"></span><br><span class="line">assemblyMergeStrategy in assembly := &#123;</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;servlet&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;activation&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;org&quot;, &quot;apache&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;google&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;esotericsoftware&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;codahale&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;yammer&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;about.html&quot; =&gt; MergeStrategy.rename</span><br><span class="line">  case &quot;META-INF/ECLIPSEF.RSA&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;META-INF/mailcap&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;META-INF/mimetypes.default&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;plugin.properties&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;log4j.properties&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case x =&gt;</span><br><span class="line">    val oldStrategy = (assemblyMergeStrategy in assembly).value</span><br><span class="line">    oldStrategy(x)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="spark-2.x">Spark 2.x</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">// this file was written for spark 2.0.0 and scala 2.11.8</span><br><span class="line"></span><br><span class="line">version := &quot;1.0&quot;</span><br><span class="line"></span><br><span class="line">name := &quot;my-sample-spark2-streaming-project&quot;</span><br><span class="line"></span><br><span class="line">scalaVersion := &quot;2.11.8&quot;</span><br><span class="line"></span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-core&quot; % &quot;2.0.0&quot; % &quot;provided&quot;</span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-streaming&quot; % &quot;2.0.0&quot; % &quot;provided&quot;</span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-streaming-kinesis-asl&quot; % &quot;2.0.0&quot;</span><br><span class="line">libraryDependencies += &quot;org.apache.spark&quot; %% &quot;spark-sql&quot; % &quot;2.0.0&quot; % &quot;provided&quot;</span><br><span class="line"></span><br><span class="line">assemblyMergeStrategy in assembly := &#123;</span><br><span class="line">  case PathList(&quot;org&quot;,&quot;aopalliance&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;inject&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;servlet&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;javax&quot;, &quot;activation&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;org&quot;, &quot;apache&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;google&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;esotericsoftware&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;codahale&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case PathList(&quot;com&quot;, &quot;yammer&quot;, xs @ _*) =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;about.html&quot; =&gt; MergeStrategy.rename</span><br><span class="line">  case &quot;META-INF/ECLIPSEF.RSA&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;META-INF/mailcap&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;META-INF/mimetypes.default&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;plugin.properties&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case &quot;log4j.properties&quot; =&gt; MergeStrategy.last</span><br><span class="line">  case x =&gt;</span><br><span class="line">    val oldStrategy = (assemblyMergeStrategy in assembly).value</span><br><span class="line">    oldStrategy(x)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/1970/01/01/scala/" rel="next" title="scala">
+      scala <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%98%E7%BD%91"><span class="nav-number">1.</span> <span class="nav-text">官网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5%E5%A4%96%E9%83%A8jar%E5%8C%85"><span class="nav-number">2.</span> <span class="nav-text">导入外部jar包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tips1"><span class="nav-number">2.1.</span> <span class="nav-text">Tips1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tips2"><span class="nav-number">2.2.</span> <span class="nav-text">Tips2</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="nav-number">3.</span> <span class="nav-text">项目结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sbt-package-and-assembly"><span class="nav-number">4.</span> <span class="nav-text">sbt package and assembly</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sbt-assembly"><span class="nav-number">4.1.</span> <span class="nav-text">sbt-assembly</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#building-a-thin-jar-file"><span class="nav-number">4.2.</span> <span class="nav-text">Building a
+Thin JAR File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#building-a-fat-jar-file"><span class="nav-number">4.3.</span> <span class="nav-text">Building a
+Fat JAR File</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#myown"><span class="nav-number">4.3.1.</span> <span class="nav-text">myown</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#other-people"><span class="nav-number">4.3.2.</span> <span class="nav-text">other
+people</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#add-sbt-assembly-plugin-to-sbt"><span class="nav-number">4.3.2.1.</span> <span class="nav-text">Add sbt-assembly plugin to
+sbt</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#spark-1.x"><span class="nav-number">4.3.2.2.</span> <span class="nav-text">Spark 1.x</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#spark-2.x"><span class="nav-number">4.3.2.3.</span> <span class="nav-text">Spark 2.x</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">mad0g4</p>
+  <div class="site-description" itemprop="description">Blog of Mad0g4</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mad0g4</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
