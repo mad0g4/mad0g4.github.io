@@ -1,4 +1,4 @@
-https://mad0g4.github.io/2022/05/14/cf/
+https://mad0g4.github.io/1970/01/01/cf/
 https://mad0g4.github.io/1970/01/01/banzi/
 https://mad0g4.github.io/1970/01/01/scala/
 https://mad0g4.github.io/1970/01/01/sbt/
